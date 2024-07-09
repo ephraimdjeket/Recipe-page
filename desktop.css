@@ -1,0 +1,18 @@
+
+@import url(global.css);
+@media screen and (min-width: 545px) {
+    body {
+        background-color: var(--Eggshell);
+        padding: 2rem 0rem;
+    }
+
+    .omelette {
+        margin: 1rem auto;
+        max-width: 500px;
+    }
+
+    .receipe-wrapper, .omelette {
+        border-radius: 10px;
+    }
+
+}

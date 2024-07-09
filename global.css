@@ -1,0 +1,158 @@
+:root {
+    /* Primary Colors */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);;
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+
+    /* Font Families */
+    --Young-serif: "Young Serif", serif;
+    --Outfit: "Outfit", "sans-serif";
+    --Font-weight-300: 300;
+
+    /* Content spacer */
+    --spacer: 1.5rem 0rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Content */
+
+.receipe-wrapper {
+    background-color: var(--White);
+    width: 100%;
+    max-width: 550px;
+}
+
+.content-wrapper {
+padding: 0rem 1.5rem;
+
+}
+
+h1 {
+    font-family: var(--Young-serif);
+    font-weight: 400;
+    padding-top: 1rem;
+    color: var(--Dark-Charcoal);
+}
+
+p {
+    padding: var(--spacer);
+    font-family: var(--Outfit);
+    font-weight: var(--Font-weight-300);
+    color: var(--Wenge-Brown);
+}
+
+/* Preparation styling */
+
+.preparation-wrapper > h3 {
+    color: var(--Dark-Raspberry);
+    font-family: var(--Outfit);
+}
+
+.preparation-list, .ingridients-wrapper > ul, ol {
+    font-family: var(--Outfit);
+    margin: 1rem 0rem;
+    padding-left: 1.5rem;
+    color: var(--Wenge-Brown);
+}
+
+li {
+    padding: 0.5rem 0rem;
+}
+
+.preparation-wrapper {
+    background-color: var(--Rose-White);
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Ingridients styling */
+
+.ingridients-wrapper, .instructions-wrapper, .nutrition-wrapper {
+    padding: var(--spacer);
+}
+
+h2 {
+    color: var(--Nutmeg);
+    font-family: var(--Young-serif);
+    font-weight: 500;
+}
+
+.ingridients-wrapper > ul > li {
+    font-family: var(--Outfit);
+    font-weight: var(--Font-weight-300);
+    color: var(--Wenge-Brown);
+}
+
+/* Line */
+
+.line {
+    border: none;         
+    height: 1px;           
+    width: 90%;            
+    background-color: var(--Light-Grey);
+}
+
+.instructions-wrapper > ol > li {
+    padding: 1rem 0rem;
+}
+
+.nutritions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nutritions-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nutrition-value {
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+
+/* Footer */
+
+.attribution {
+    font-family: var(--Outfit);
+    padding: var(--spacer);
+    color: var(--Nutmeg);
+    text-align: center;
+}
+
+.attribution > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--Dark-Charcoal);
+}
+
+.attribution > a:hover {
+    color: var(--Dark-Raspberry);
+}
