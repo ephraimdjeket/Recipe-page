@@ -142,7 +142,7 @@ h2 {
 
 .attribution {
     font-family: var(--Outfit);
-    padding: var(--spacer);
+    padding: 1rem;
     color: var(--Nutmeg);
     text-align: center;
 }
